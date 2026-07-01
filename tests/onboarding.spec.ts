@@ -2,7 +2,7 @@ import { devices } from '@playwright/test';
 import { OnboardingPage } from './pages/OnboardingPage';
 import { test, expect } from './fixtures';
 
-test.use({ ...devices['iPhone SE'] });
+// test.use({ ...devices['iPhone SE'] });
 
 test('onboarding page loads with budbright branding', async ({ onboardingPage }) => {
     await expect(onboardingPage.tagline).toBeVisible();

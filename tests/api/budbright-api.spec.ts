@@ -3,18 +3,18 @@ import { test, expect } from '@playwright/test';
 const SUPASEBASE_URL = process.env.SUPABASE_URL!;
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY!;
 
-test('verify user endpoint', async({request})=>{
-    const response = await request.get(`${SUPASEBASE_URL}/rest/v1/profiles`, {
-        headers: {
-            apikey: SUPABASE_ANON_KEY,
-            Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-        },
-    });
+test('verify user endpoint', async ({ request }) => {
+  const response = await request.get(`${SUPASEBASE_URL}/rest/v1/profiles`, {
+    headers: {
+      apikey: SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+    },
+  });
 
-    expect(response.status()).toBe(200);
-    const body = await response.text();
-    expect(body).toEqual("[]");
-    
+  expect(response.status()).toBe(200);
+  const body = await response.text();
+  expect(body).toEqual("[]");
+
 });
 
 const USER_ACCESS_TOKEN = process.env.SUPABASE_USER_ACCESS_TOKEN!;

@@ -1,0 +1,31 @@
+version: 0.2
+
+env:
+  parameter-store:
+    SUPABASE_URL: /budbright/SUPABASE_URL
+    SUPABASE_ANON_KEY: /budbright/SUPABASE_ANON_KEY
+    SUPABASE_USER_ACCESS_TOKEN: /budbright/SUPABASE_USER_ACCESS_TOKEN
+    SUPABASE_TEST_USER_ID: /budbright/SUPABASE_TEST_USER_ID
+    
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - npm ci
+      - npx playwright install --with-deps chromium
+
+  build:
+    commands:
+      - npx playwright test
+    finally:
+      - echo "Tests complete"
+
+  post_build:
+    commands:
+      - aws s3 cp playwright-report/ s3://budbright-playwright-reports/reports/latest/ --recursive
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: playwright-report
