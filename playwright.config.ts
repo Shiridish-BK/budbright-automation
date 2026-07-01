@@ -39,7 +39,7 @@ export default defineConfig({
     {
       name: 'mobile-unauthenticated',
       testMatch: /onboarding\.spec\.ts/,
-      use: { ...devices['iPhone SE'] },
+      use: { ...devices['iPhone SE'], defaultBrowserType: 'chromium', },
     },
     {
       name: 'mobile-authenticated',
