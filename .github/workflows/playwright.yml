@@ -32,7 +32,7 @@ jobs:
           site: datadoghq.com
 
       - name: Run Playwright tests
-        run: NODE_OPTIONS="-r dd-trace/ci/init" npx playwright test --project=mobile-unauthenticated
+        run: npx playwright test --project=mobile-unauthenticated
         env:
           NODE_OPTIONS: -r ${{env.DD_TRACE_PACKAGE}}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
