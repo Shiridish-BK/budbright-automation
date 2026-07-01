@@ -24,14 +24,17 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      - name: Configure Datadog Test Optimization
+        uses: datadog/test-visibility-github-action@v2
+        with:
+          languages: js
+          api_key: ${{ secrets.DD_API_KEY }}
+          site: datadoghq.com
+
       - name: Run Playwright tests
         run: NODE_OPTIONS="-r dd-trace/ci/init" npx playwright test --project=mobile-unauthenticated
         env:
-          DD_CIVISIBILITY_AGENTLESS_ENABLED: true
-          DD_API_KEY: ${{ secrets.DD_API_KEY }}
-          DD_SITE: datadoghq.com
-          DD_SERVICE: budbright-qa
-          DD_ENV: ci
+          NODE_OPTIONS: -r ${{env.DD_TRACE_PACKAGE}}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
           SUPABASE_USER_ACCESS_TOKEN: ${{ secrets.SUPABASE_USER_ACCESS_TOKEN }}
