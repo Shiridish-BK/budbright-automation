@@ -25,10 +25,13 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test
+        run: NODE_OPTIONS="-r dd-trace/ci/init" npx playwright test --project=mobile-unauthenticated
         env:
+          DD_CIVISIBILITY_AGENTLESS_ENABLED: true
           DD_API_KEY: ${{ secrets.DD_API_KEY }}
-          DD_SITE: ${{ secrets.DD_SITE }}
+          DD_SITE: datadoghq.com
+          DD_SERVICE: budbright-qa
+          DD_ENV: ci
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
           SUPABASE_USER_ACCESS_TOKEN: ${{ secrets.SUPABASE_USER_ACCESS_TOKEN }}
