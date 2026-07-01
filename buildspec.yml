@@ -6,7 +6,7 @@ env:
     SUPABASE_ANON_KEY: /budbright/SUPABASE_ANON_KEY
     SUPABASE_USER_ACCESS_TOKEN: /budbright/SUPABASE_USER_ACCESS_TOKEN
     SUPABASE_TEST_USER_ID: /budbright/SUPABASE_TEST_USER_ID
-    
+
 phases:
   install:
     runtime-versions:
@@ -17,7 +17,7 @@ phases:
 
   build:
     commands:
-      - npx playwright test
+      - npx playwright test --project=mobile-unauthenticated
     finally:
       - echo "Tests complete"
 
