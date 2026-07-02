@@ -1,0 +1,6 @@
+[  -22060ms] [INFO] {"level":"info","message":"route_changed","timestamp":"2026-07-02T10:41:52.421Z","path":"/who-is-using"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[  -22059ms] [INFO] {"level":"info","message":"screen_viewed","timestamp":"2026-07-02T10:41:52.423Z","screen":"who-is-using"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[  -21485ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://mtkgxtifzrosybcntjnv.supabase.co/auth/v1/token?grant_type=refresh_token:0
+[  -21467ms] [ERROR] AuthApiError: Invalid Refresh Token: Refresh Token Not Found @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[    9258ms] [INFO] {"level":"info","message":"world_selected","timestamp":"2026-07-02T10:42:23.740Z","world":"parent"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[    9443ms] [INFO] {"level":"info","message":"route_changed","timestamp":"2026-07-02T10:42:23.925Z","path":"/parent/home"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13

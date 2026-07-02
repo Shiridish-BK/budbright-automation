@@ -1,0 +1,7 @@
+[     932ms] [INFO] {"level":"info","message":"route_changed","timestamp":"2026-07-02T10:43:04.691Z","path":"/parent/home"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[     990ms] [INFO] {"level":"info","message":"route_changed","timestamp":"2026-07-02T10:43:04.749Z","path":"/splash"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[     991ms] [INFO] {"level":"info","message":"screen_viewed","timestamp":"2026-07-02T10:43:04.750Z","screen":"splash"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[    3556ms] [INFO] {"level":"info","message":"route_changed","timestamp":"2026-07-02T10:43:07.315Z","path":"/onboarding"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[    3558ms] [INFO] {"level":"info","message":"screen_viewed","timestamp":"2026-07-02T10:43:07.317Z","screen":"walkthrough","step":1} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[    3559ms] [INFO] {"level":"info","message":"screen_viewed","timestamp":"2026-07-02T10:43:07.318Z","screen":"auth"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13
+[    3560ms] [INFO] {"level":"info","message":"auth_state_changed","timestamp":"2026-07-02T10:43:07.319Z","event":"INITIAL_SESSION"} @ https://v2--budbright.netlify.app/assets/index-XeTsjdpw.js:13

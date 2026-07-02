@@ -37,13 +37,23 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'setup',
+      testMatch: '**/seed.spec.ts',
+    },
+    {
       name: 'mobile-unauthenticated',
       testMatch: /onboarding\.spec\.ts/,
       use: { ...devices['iPhone SE'], defaultBrowserType: 'chromium', },
     },
     {
       name: 'mobile-authenticated',
-      testMatch: /whoisusing\.spec\.ts/,
+      testMatch: [
+        'who-is-using.spec.ts',
+        'api/data-lifecycle.spec.ts',
+        'seed.spec.ts',
+        'parent-onboarding.spec.ts',   // the generated test, once it exists
+      ],
+      dependencies: ['setup'],   // seed runs first, blocks the rest if it fails
       use: {
         ...devices['iPhone SE'],
         storageState: 'playwright/.auth/user.json',

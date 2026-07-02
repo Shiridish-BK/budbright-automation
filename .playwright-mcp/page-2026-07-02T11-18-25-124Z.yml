@@ -1,0 +1,106 @@
+- generic [ref=e25]:
+  - banner [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: Hey there!
+        - generic [ref=e30]: Good afternoon! What's on today?
+        - 'button "Location: Hyderabad. Tap for more info." [ref=e32] [cursor=pointer]':
+          - generic [ref=e33]: Hyderabad
+          - img [ref=e34]
+      - generic [ref=e36]:
+        - button "Notifications" [ref=e37] [cursor=pointer]:
+          - img [ref=e39]
+        - button "Switch to Kid's Budville?" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]:
+            - img "Buddy Fox" [ref=e45]
+            - generic [ref=e48]: Kid's World
+  - main [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - heading "Browse by category" [level=2] [ref=e52]
+        - generic "Browse by category" [ref=e54]:
+          - button "Play Zones" [ref=e55] [cursor=pointer]:
+            - img [ref=e57]
+            - generic [ref=e58]: Play Zones
+          - button "Parks" [ref=e59] [cursor=pointer]:
+            - img [ref=e61]
+            - generic [ref=e62]: Parks
+          - button "Art & Craft" [ref=e63] [cursor=pointer]:
+            - img [ref=e65]
+            - generic [ref=e66]: Art & Craft
+          - button "Sports" [ref=e67] [cursor=pointer]:
+            - img [ref=e69]
+            - generic [ref=e70]: Sports
+          - button "Dance & Music" [ref=e71] [cursor=pointer]:
+            - img [ref=e73]
+            - generic [ref=e74]: Dance & Music
+          - button "Summer Camps" [ref=e75] [cursor=pointer]:
+            - img [ref=e77]
+            - generic [ref=e78]: Summer Camps
+          - button "Special Events" [ref=e79] [cursor=pointer]:
+            - img [ref=e81]
+            - generic [ref=e82]: Special Events
+      - region "Read · Watch" [ref=e83]:
+        - heading "Read · Watch" [level=2] [ref=e84]
+        - generic "Read · Watch" [ref=e85]:
+          - button "Your Calm is Contagious — Connect" [ref=e87] [cursor=pointer]:
+            - generic [ref=e88]:
+              - generic [ref=e89]: 📖 Today's Read
+              - heading "Your Calm is Contagious" [level=3] [ref=e90]
+              - generic [ref=e91]:
+                - generic [ref=e92]: Connect
+                - generic [ref=e93]: 1 min read
+      - region "Frequently asked questions" [ref=e94]:
+        - heading "Frequently asked questions" [level=2] [ref=e95]
+        - list [ref=e96]:
+          - listitem [ref=e97]:
+            - generic [ref=e98]:
+              - button "What is Budbright?" [ref=e99] [cursor=pointer]:
+                - generic [ref=e100]: What is Budbright?
+                - generic [ref=e101]: ›
+              - paragraph [ref=e102]: Budbright sparks real-world play for kids aged 2–10 through guided offline activities, storybooks, and a curated local marketplace to discover play zones, classes, and events in your city.
+          - listitem [ref=e103]:
+            - generic [ref=e104]:
+              - button "How do guided activities in Kid's world work?" [ref=e105] [cursor=pointer]:
+                - generic [ref=e106]: How do guided activities in Kid's world work?
+                - generic [ref=e107]: ›
+              - paragraph [ref=e108]: Every activity happens in the real world with things you already have at home. The app guides your child step by step — read it together, then play offline.
+          - listitem [ref=e109]:
+            - generic [ref=e110]:
+              - button "How do I book a venue or class?" [ref=e111] [cursor=pointer]:
+                - generic [ref=e112]: How do I book a venue or class?
+                - generic [ref=e113]: ›
+              - paragraph [ref=e114]: Tap any listing to see details, timings, and contact info. Bookings and lead submission are coming soon — for now, reach out to the venue directly.
+          - listitem [ref=e115]:
+            - generic [ref=e116]:
+              - button "Is my child's data safe?" [ref=e117] [cursor=pointer]:
+                - generic [ref=e118]: Is my child's data safe?
+                - generic [ref=e119]: ›
+              - paragraph [ref=e120]: Yes. We only collect the minimum needed to personalise the experience (name, age). Photos you capture stay private to your account. We never share kid data with third parties.
+      - generic [ref=e121]:
+        - generic [ref=e123]: 👋
+        - paragraph [ref=e124]: I'm building Budbright for kids like mine. It's still in active development and I ship updates daily — thanks for being here early.
+        - paragraph [ref=e125]: — Shiridish, Founder
+        - generic [ref=e126]:
+          - button "Give feedback" [ref=e127] [cursor=pointer]
+          - button "Our story →" [ref=e128] [cursor=pointer]
+        - paragraph [ref=e129]:
+          - text: Made with
+          - img "love" [ref=e130]
+          - text: in Hyderabad ·
+          - link "Privacy" [ref=e132]:
+            - /url: "#"
+          - text: ·
+          - link "Terms" [ref=e133]:
+            - /url: "#"
+          - text: · v20260430_c1dd972
+  - navigation "Main navigation" [ref=e134]:
+    - button "Home" [ref=e135] [cursor=pointer]:
+      - img [ref=e137]
+      - generic [ref=e140]: Home
+    - button "Explore" [ref=e141] [cursor=pointer]:
+      - img [ref=e142]
+      - generic [ref=e145]: Explore
+    - button "Profile" [ref=e146] [cursor=pointer]:
+      - img [ref=e147]
+      - generic [ref=e150]: Profile
