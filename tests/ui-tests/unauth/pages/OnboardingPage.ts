@@ -1,5 +1,5 @@
 import { Page, expect, Locator } from '@playwright/test'
-import { Healer } from '../utils/Healer';
+import { Healer } from '../../../utils/auto_healer';
 
 export class OnboardingPage {
     readonly page: Page;
